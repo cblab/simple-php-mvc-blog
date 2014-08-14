@@ -8,8 +8,8 @@
 
         public function getInformationById($id) {
             return $this->database->query(
-                "SELECT model, year, price " .
-                "FROM car " .
+                "SELECT * " .
+                "FROM article " .
                 "WHERE id = " . (int) $id
             )->fetch();
         }
