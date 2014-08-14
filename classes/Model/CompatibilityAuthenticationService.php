@@ -1,27 +1,29 @@
 <?php
-
 namespace Model;
 
-class AuthenticationService implements AuthenticationServiceInterface {
+class CompatibilityAuthenticationService implements AuthenticationServiceInterface {
 
-    protected $database;
+    protected $bcrypt   = null;
+    protected $database = null;
 
     public function __construct(PDO $database) {
         $this->database = $database;
+        $this->$bcrypt = new Bcrypt(15);
     }
 
     public function register($username, $password) {
-        $hash = password_hash($password, PASSWORD_BCRYPT);
+        $hash = $this->bcrypt->hash($password);
         save($username, $hash);
     }
 
     public function login($username, $password) {
         $hash = loadHashByUsername($username);
-        if (password_verify($password, $hash)) {
+
+        if ($this->bcrypt->verify($password, $hash)) {
             //login
         } else {
             // failure
         }
     }
-}
 
+}
