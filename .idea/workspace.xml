@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="047678c3-fb83-4b1f-8c3e-7f58d9e218ef" name="Default" comment="Implemented Autoloader&#10;Moved inline classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/Autoloader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/App/Request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/App/Router.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/App/TwigEscapingGuesser.php" />
+    <list default="true" id="047678c3-fb83-4b1f-8c3e-7f58d9e218ef" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Model/AuthenticationService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Security/Bcrypt.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/App/Request.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/model/BlogService.php" afterPath="$PROJECT_DIR$/classes/Model/BlogService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,30 +30,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="article.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/article.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="360">
+            <state line="27" column="58" selection-start="831" selection-end="831" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="828">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
+      <file leaf-file-name="AuthenticationService.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/Model/AuthenticationService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="40" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="774">
-              <folding>
-                <element signature="e#310#361#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Bcrypt.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Security/Bcrypt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="2034">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Model/BlogService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="3" selection-start="9" selection-end="9" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Router.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/App/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="26" selection-start="359" selection-end="359" vertical-scroll-proportion="0.41968912" vertical-offset="0" max-vertical-offset="772">
+            <state line="1" column="14" selection-start="6" selection-end="20" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="702">
               <folding />
             </state>
           </provider>
@@ -62,7 +78,7 @@
       <file leaf-file-name="TwigEscapingGuesser.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/App/TwigEscapingGuesser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="16" selection-end="19" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="450">
+            <state line="1" column="10" selection-start="16" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -71,7 +87,7 @@
       <file leaf-file-name="Autoloader.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="378">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="378">
               <folding />
             </state>
           </provider>
@@ -80,7 +96,7 @@
       <file leaf-file-name="Core.php" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="409" column="9" selection-start="10611" selection-end="10611" vertical-scroll-proportion="-11.259259" vertical-offset="7058" max-vertical-offset="18288">
+            <state line="409" column="9" selection-start="10611" selection-end="10611" vertical-scroll-proportion="0.0" vertical-offset="7058" max-vertical-offset="18288">
               <folding />
             </state>
           </provider>
@@ -89,16 +105,7 @@
       <file leaf-file-name="SPL_f.php" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL_f.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="9" selection-start="2065" selection-end="2065" vertical-scroll-proportion="-10.962963" vertical-offset="766" max-vertical-offset="3564">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Request.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/App/Request.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="32" selection-start="206" selection-end="206" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="648">
+            <state line="59" column="9" selection-start="2065" selection-end="2065" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="3564">
               <folding />
             </state>
           </provider>
@@ -107,16 +114,7 @@
       <file leaf-file-name="http.php" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/http.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="107" selection-end="107" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="58104">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/db_config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
+            <state line="7" column="6" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="58104">
               <folding />
             </state>
           </provider>
@@ -140,8 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/car.php" />
-        <option value="$PROJECT_DIR$/model/BlogService.php" />
         <option value="$PROJECT_DIR$/nginx.config" />
         <option value="$PROJECT_DIR$/classes/BlogHttpRequest.php" />
         <option value="$PROJECT_DIR$/classes/Router.php" />
@@ -152,9 +148,12 @@
         <option value="$PROJECT_DIR$/classes/App/Router.php" />
         <option value="$PROJECT_DIR$/classes/App/TwigEscapingGuesser.php" />
         <option value="$PROJECT_DIR$/classes/App/HttpRequest.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/bootstrap/Autoloader.php" />
         <option value="$PROJECT_DIR$/classes/App/Request.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/model/AuthenticationService.php" />
+        <option value="$PROJECT_DIR$/classes/security/Bcrypt.php" />
+        <option value="$PROJECT_DIR$/classes/Model/AuthenticationService.php" />
       </list>
     </option>
   </component>
@@ -191,6 +190,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +219,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-php-mvc-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-php-mvc-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,7 +279,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,6 +343,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/classes" />
       <recent name="$PROJECT_DIR$/classes/SimpleMvcBlog" />
       <recent name="$PROJECT_DIR$/bootstrap" />
       <recent name="$PROJECT_DIR$" />
@@ -383,30 +405,34 @@
       <created>1408005231909</created>
       <updated>1408005231909</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented Autoloader&#10;Moved inline classes">
+      <created>1408014028872</created>
+      <updated>1408014028872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12034079" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22277501" sideWeight="0.87965924" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16694306" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12913553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -430,16 +456,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nginx.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/BlogService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="363" selection-end="363" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="396" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/db_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
@@ -449,30 +465,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1476">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blog_titles.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blog_post.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/article.php">
@@ -484,58 +492,70 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL_f.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="9" selection-start="2065" selection-end="2065" vertical-scroll-proportion="-10.962963" vertical-offset="766" max-vertical-offset="3564">
+        <state line="59" column="9" selection-start="2065" selection-end="2065" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="3564">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="409" column="9" selection-start="10611" selection-end="10611" vertical-scroll-proportion="-11.259259" vertical-offset="7058" max-vertical-offset="18288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/App/TwigEscapingGuesser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="16" selection-end="19" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="450">
+        <state line="409" column="9" selection-start="10611" selection-end="10611" vertical-scroll-proportion="0.0" vertical-offset="7058" max-vertical-offset="18288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/http.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="107" selection-end="107" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="58104">
+        <state line="7" column="6" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="58104">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/App/Request.php">
+    <entry file="file://$PROJECT_DIR$/classes/App/TwigEscapingGuesser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="206" selection-end="206" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="648">
+        <state line="1" column="10" selection-start="16" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="378">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="774">
-          <folding>
-            <element signature="e#310#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="378">
+        <state line="27" column="58" selection-start="831" selection-end="831" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="828">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="359" selection-end="359" vertical-scroll-proportion="0.41968912" vertical-offset="0" max-vertical-offset="772">
+        <state line="1" column="14" selection-start="6" selection-end="20" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Security/Bcrypt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="2034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Model/BlogService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="9" selection-end="9" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Model/AuthenticationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
