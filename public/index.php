@@ -4,14 +4,16 @@ ini_set('display_errors', 1);
 require_once('../bootstrap/Autoloader.php');
 require_once '../vendor/autoload.php';
 
-//require_once '../Model/BlogService.php';
-//$blogService = new BlogService(require '../config/db_config.php');
-
-$loader = new Twig_Loader_Filesystem('../views/');
-
 use App\TwigEscapingGuesser as TwigEscapingGuesser;
 use App\Router as Router;
 use App\RequestMethod as RequestMethod;
+
+$blogService = new \Model\BlogService(require '../config/db_config.php');
+$loader      = new Twig_Loader_Filesystem('../views/');
+
+//$authenticationService = new \Model\AuthenticationService(require '../config/db_config.php');
+//$authenticationService->createUser('test1','test1');
+//var_dump($authenticationService->verify('test1','test1'));
 
 $twig = new Twig_Environment($loader, array(
     'autoescape' => array(new TwigEscapingGuesser(), 'guess'),
@@ -35,7 +37,7 @@ if (isset($action) && in_array($action, $routes)) {
         $router = new Router($params, $twig);
         $router->$action;
     } catch (RuntimeException $e){
-        echo "An Exception occured: " . $e->getMessage();
+        echo "An Exception was raised: " . $e->getMessage();
     }
 } else {
     $router = new Router($params, $twig);

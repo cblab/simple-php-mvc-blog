@@ -4,6 +4,7 @@ namespace Security;
 class Bcrypt
 {
     private $rounds;
+    private $randomState;
 
     public function __construct($rounds = 12) {
         if (CRYPT_BLOWFISH != 1) {
@@ -13,6 +14,13 @@ class Bcrypt
         $this->rounds = $rounds;
     }
 
+    /**
+     * create hash
+     *
+     * @param $input e.g. password
+     *
+     * @return bool|string
+     */
     public function hash($input) {
         $hash = crypt($input, $this->getSalt());
 
@@ -22,12 +30,25 @@ class Bcrypt
         return false;
     }
 
+    /**
+     * verify password with hash
+     *
+     * @param $input
+     * @param $existingHash
+     *
+     * @return bool
+     */
     public function verify($input, $existingHash) {
         $hash = crypt($input, $existingHash);
 
         return $hash === $existingHash;
     }
 
+    /**
+     * get salt
+     *
+     * @return string
+     */
     private function getSalt() {
         $salt  = sprintf('$2a$%02d$', $this->rounds);
         $bytes = $this->getRandomBytes(16);
@@ -36,8 +57,13 @@ class Bcrypt
         return $salt;
     }
 
-    private $randomState;
-
+    /**
+     * get random bytes
+     *
+     * @param $count how much bytes to fetch
+     *
+     * @return string
+     */
     private function getRandomBytes($count) {
         $bytes = '';
 
@@ -80,6 +106,13 @@ class Bcrypt
         return $bytes;
     }
 
+    /**
+     * encode bytes
+     *
+     * @param $input
+     *
+     * @return string
+     */
     private function encodeBytes($input) {
         // The following is code from the PHP Password Hashing Framework
         $itoa64 = './ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
