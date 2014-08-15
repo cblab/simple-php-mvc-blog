@@ -1,77 +1,138 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/media-queries.css"/>
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <!-- Add your site or application content here -->
-        <header>
-            <nav>
-                <div id="navcontainer">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="active"><a href="#">Login</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section>
-            <article>
-                <header>
-                    <h2>Blogeintrag Titel</h2>
-                    <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-                </header>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </article>
-            <article>
-                <header>
-                    <h2>Blogeintrag Titel2</h2>
-                    <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-                </header>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </article>
-        </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic,700italic' rel='stylesheet'
+          type='text/css'>
 
-        <aside>
-            <h2>About section</h2>
-            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        </aside>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-        <footer>
-            <p>Copyright 2014 SomeCompany</p>
-        </footer>
+</head>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+<body id="home">
+<div id="wrapper">
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+    <header>
+        <h1><a href="index.html">Site Title</a></h1>
+
+        <h2>Tagline <span>&amp;</span> Some clever comment about the company</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">Logout</a>
+
+            <div class="clearfix"></div>
+        </nav>
+    </header>
+
+    <section id="main-content">
+        <div id="featured">
+            <h3>Featured Article :</h3>
+
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac
+                consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. <br/> <a href="#">Continue Reading &rarr;</a></p>
+        </div>
+        <!-- END Featured -->
+        <hr/>
+        <div id="latest">
+            <section class="left-col">
+                <h3>Latest Articles :</h3><br/>
+                <article>
+                    <header>
+                        <h4><a href="#">Blog 1</a></h4>
+
+                        <p>Posted on
+                            <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time>
+                            by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
+                    </header>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a
+                                href="#">Continue Reading &rarr;</a></p>
+                </article>
+                <article>
+                    <header>
+                        <h4><a href="#">Blog 1</a></h4>
+
+                        <p>Posted on
+                            <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time>
+                            by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
+                    </header>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </article>
+            </section>
+            <!-- END Left Column -->
+
+        </div>
+        <!-- END Latest -->
+        <div class="clearfix"></div>
+        <hr/>
+        <div id="about">
+            <h3>About</h3>
+
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel
+                scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis
+                in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non
+                mi porta gravida at eget metus.
+            </p>
+        </div>
+    </section>
+    <hr/>
+    <footer>
+        <p>&copy; 2014 - some company</p>
+    </footer>
+
+</div>
+<!-- END Wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+</body>
 </html>
