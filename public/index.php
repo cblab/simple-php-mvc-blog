@@ -35,7 +35,7 @@ $routes = array('index', 'login', 'login_success', 'logout', 'blog_post');
 if (isset($action) && in_array($action, $routes)) {
     try {
         $router = new Router($params, $twig);
-        $router->$action;
+        $router->{$action}();
     } catch (RuntimeException $e){
         echo "An Exception was raised: " . $e->getMessage();
     }
